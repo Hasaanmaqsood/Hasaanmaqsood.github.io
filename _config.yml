@@ -1,0 +1,238 @@
+# ==============================
+#   AcademicPages Configuration
+#   Customized for Hasaan Maqsood
+# ==============================
+
+# Basic Site Settings
+locale                   : "en-US"
+site_theme               : "default"
+title                    : "Hasaan Maqsood - AI & Precision Medicine Research"
+title_separator          : "-"
+name                     : &name "Hasaan Maqsood"
+description              : &description "Machine Learning and AI researcher focusing on predictive modeling, multimodal data integration, and medical imaging analysis for precision oncology and personalized healthcare."
+url                      : "https://hasaanmaqsood.github.io"
+baseurl                  : ""
+repository               : "Hasaanmaqsood/hasaanmaqsood.github.io"
+
+# Sidebar Author Profile
+author:
+  avatar           : "profile.png"
+  name             : "Hasaan Maqsood"
+  bio              : "PhD student specializing in Machine Learning, Multimodal AI, and Medical Imaging. Passionate about applying AI for precision oncology and personalized healthcare."
+  location         : "Moscow, Russia"
+  employer         : "Skoltech University"
+  email            : "hasaankhattak159@gmail.com"
+
+  # Academic Profiles
+  googlescholar    : "https://scholar.google.com/citations?user=X3VSk2oAAAAJ&hl=en"
+  orcid            : "https://orcid.org/"
+  researchgate     : 
+  pubmed           : 
+  scopus           : 
+
+  # Repositories / Developer Accounts
+  github           : "Hasaanmaqsood"
+
+  # Social Media
+  linkedin         : "hasaanmaqsood"
+  twitter          : 
+  medium           : 
+  bluesky          : 
+  instagram        : 
+  facebook         : 
+
+# Publication Categories
+publication_category:
+  books:
+    title: "Books"
+  manuscripts:
+    title: "Journal Articles"
+  conferences:
+    title: "Conference Papers"
+
+# Site Settings
+teaser                   : 
+breadcrumbs              : false
+words_per_minute         : 160
+future                   : true
+read_more                : "disabled"
+talkmap_link             : false
+comments:
+  provider               : false
+
+atom_feed:
+  hide                   : false
+  path                   :
+
+# SEO
+google_site_verification :
+bing_site_verification   :
+alexa_site_verification  :
+yandex_site_verification :
+
+# Social Sharing
+twitter:
+  username               :
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 :
+og_description           :
+social:
+  type                   : Person
+  name                   : "Hasaan Maqsood"
+  links:
+    - "https://www.linkedin.com/in/hasaanmaqsood"
+    - "https://github.com/Hasaanmaqsood"
+    - "https://scholar.google.com/citations?user=X3VSk2oAAAAJ&hl=en"
+
+# Analytics (optional)
+analytics:
+  provider               : "false"
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+  - files
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .github
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - CHANGELOG
+  - Capfile
+  - config
+  - Dockerfile
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - local
+  - log
+  - node_modules
+  - package.json*
+  - Rakefile
+  - README
+  - tmp
+  - vendor
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Collections
+collections:
+  teaching:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  talks:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults for layouts
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+      author_profile: true
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Output
+permalink: /:categories/:title/
+timezone: Etc/UTC
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
